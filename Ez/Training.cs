@@ -7,7 +7,7 @@ namespace Ez
     class Training
     {
         #region Fields
-        private static Plan _plan;
+        private Plan _plan;
         private heightCorrect _changeFly;
         private bool _endFly;
         private List<Dispatcher> _report;
@@ -16,7 +16,7 @@ namespace Ez
         #region Properties
         public bool EndFly { get { return _endFly; } private set { _endFly = value; } }
         public List<Dispatcher> Report { get { return _report; } set { _report = value; } }
-        public static Plan Plan { get { return _plan; } set { _plan = value; } }
+        public Plan Plan { get { return _plan; } set { _plan = value; } }
         #endregion
 
         #region Constructors
