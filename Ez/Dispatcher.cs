@@ -21,7 +21,10 @@ namespace Ez
                 {
                     _name = value;
                 }
-                throw new ArgumentException("Недопустимое имя");
+                else
+                {
+                    throw new ArgumentException("Недопустимое имя");
+                }                
             }
         }
         public int CorrectHeight { get { return _correctHeight; } private set { _correctHeight = value; } }
